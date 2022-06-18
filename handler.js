@@ -534,7 +534,7 @@ export async function handler(chatUpdate) {
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `[💬] Diperlukan level ${plugin.level} untuk menggunakan perintah ini\n*Level mu:* ${_user.level} 📊`, m)
+                    this.reply(m.chat, `[💬] 𝗗𝗶𝗽𝗲𝗿𝗹𝘂𝗸𝗮𝗻 𝗟𝗲𝘃𝗿𝗹 ${plugin.level} 𝗨𝗻𝘁𝘂𝗸 𝗠𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗣𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗜𝗻𝗶\n*𝗟𝗲𝘃𝗲𝗹 𝗞𝗺𝘂 𝗞𝗮𝗸:* ${_user.level} 📊`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -576,7 +576,7 @@ export async function handler(chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*🗂️ Plugin:* ${m.plugin}\n*👤 Sender:* ${m.sender}\n*💬 Chat:* ${m.chat}\n*💻 Command:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(`*🗂️ 𝗣𝗹𝘂𝗴𝗶𝗻:* ${m.plugin}\n*👤 𝗣𝗲𝗻𝗴𝗶𝗿𝗶𝗺:* ${m.sender}\n*💬 𝗖𝗵𝗮𝘁:* ${m.chat}\n*💻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗔𝘁𝗮𝘂 𝗣𝗲𝗿𝗶𝗻𝘁𝗮𝗵:* ${usedPrefix}${command} ${args.join(' ')}\n📄 *𝗘𝗿𝗿𝗼𝗿 𝗟𝗼𝗴:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -590,7 +590,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Limit terpakai ✔️')
+                        m.reply(+m.limit + ' 𝗟𝗶𝗺𝗶𝘁 𝗧𝗲𝗿𝗽𝗮𝗶𝗸𝗮𝗶 ✔️')
                 }
                 break
             }
@@ -775,9 +775,9 @@ sourceUrl: sgc
  } 
 })
     let msgg = {
-    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ ! 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
+    	unreg: 'ʜᴀʟᴏ ᴋᴀᴋ ! 👋\nᴅᴀғᴛᴀʀ ᴅᴜʟᴜ ʏᴀ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
-if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
+if (msgg) return conn.sendButton(m.chat, `${global.htki} 𝙑𝙚𝙧𝙞𝙛𝙞𝙠𝙖𝙨𝙞 ${global.htka}`, msgg, null, ['𝗩𝗲𝗿𝗶𝗸𝗮𝘀𝗶 𝗞𝗲 𝗕𝗼𝘁', '/verify'],m)
 }
 
 let file = global.__filename(import.meta.url, true)
