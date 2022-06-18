@@ -17,7 +17,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • Owner Hanya merespon yang berkaitan dengan BOT
 • No Telpon Kalo Gak Penting`
 
-👾 *Co-Owner*
+👾 *Co Owner*
 >> https://wa.me/6281539336141
 • Dilarang Spam
 • Owner Berhak Blokir Tanpa Alasan
