@@ -12,10 +12,9 @@ let handler = async (m, { conn, args }) => {
 	let jpegThumbnail = await extractImageThumb(buffer)
 	conn.sendMessage(m.chat, { document: { url: 'https://expressjs-akkun.up.railway.app/nhentai/' + code }, jpegThumbnail, fileName: json.result.title + '.pdf', mimetype: 'application/pdf' }, { quoted: m })
 }
-handler.help = ['nhentai']
+handler.help = handler.alias = ['nhentai']
 handler.tags = ['nsfw']
 handler.command = /^(nhentai)$/i
-
-handler.limit = true
+handler.private = true
 
 export default handler
