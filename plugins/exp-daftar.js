@@ -50,7 +50,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* ${conn.getName(m.sender)}\n<❔> Mau Custom Nme? Ketik *${usedPrefix + command} NamaKamu.Umur*`,
+  footer: `┗ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* ${conn.getName(m.sender)}\n<❔> Mau Custom Name? Ketik *${usedPrefix + command} NamaKamu.Umur*`,
   title: "▢- - - - - ʀᴇɢɪsᴛʀᴀsɪ - - - - -",
   buttonText: "Klik Disini !",
   sections
@@ -76,7 +76,7 @@ const listMessage = {
 │▸ *sᴛᴀᴛᴜs:* 🌙 sᴜᴋsᴇs
 │▸ *ɴᴀᴍᴀ:* ${name}
 │▸ *ᴜᴍᴜʀ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn}
+│▸ *sɴ:* ${sn} ✅
 │▸ *ᴛᴇʀɪᴍᴀᴋᴀsɪʜ*
 ┗────···
 
