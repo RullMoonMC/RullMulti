@@ -18,7 +18,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • No Telpon Kalo Gak Penting`
 
 👾 *Co Owner*
->> https://wa.me/6281539336141
+• https://wa.me/6281539336141
 • Dilarang Spam
 • Owner Berhak Blokir Tanpa Alasan
 • Berbicaralah Dengan Sopan
