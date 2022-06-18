@@ -71,6 +71,7 @@ global.owner = [
   ['6281539336141'],
   ['0'],
   ['6285746030186', 'Rull', true]
+  ['6281539336141', 'JennyTod', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -116,11 +117,11 @@ global.APIKeys = { // APIKey Here
 
 /*============== WATERMARK ==============*/
 //GANTI SETERAH MU
-global.wm = '                「 ℳℴℴ𝓃ℬℴ𝓉 あ⁩ 」' //Main Watermark
-global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘𝑴𝒐𝒐𝒏 - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
-global.wm3 = '𐰢  𝑴𝒐𝒐𝒏 𝗕𝗢𝗧'
-global.botdate = `𐰢  𝗗𝗮𝘁𝗲: ${week} ${date}`
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
+global.wm = '                「 ℳℴℴ𝓃ℬℴ𝓉  」' //Main Watermark
+global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘𝑴𝒐𝒐𝒏 - 𝒞𝒽𝒶𝓃˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷'
+global.wm3 = '𐰢  ℳℴℴ𝓃ℬℴ𝓉'
+global.botdate = `𐰢  𝐷𝑎𝑡𝑒: ${week} ${date}`
+global.bottime = `𝑇 𝐼 𝑀 𝐸 : ${wktuwib}`
 global.titlebot = '🌙 ┊ ℳℴℴ𝓃ℬℴ𝓉 '
 global.author = '                「 ℳℴℴ𝓃ℬℴ𝓉 あ⁩ 」'
 
@@ -135,8 +136,8 @@ global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 /*============== TEXT ==============*/
-global.wait = '```「▰▰▰▱▱▱▱▱▱▱」Loading...```'
-global.eror = '```404 error```'
+global.wait = '```「▰▰▰▱▱▱▱▱▱▱」 𝑳𝒐𝒂𝒅𝒊𝒏𝒈...```'
+global.eror = '```404 𝙴𝚁𝚁𝙾𝚁```'
 
 /*=========== TYPE DOCUMENT ===========*/
 global.dpptx = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
@@ -159,7 +160,7 @@ global.dmenub2 = '┊' //body for info cmd on Default menu
 global.dmenuf = '┗––––––––––✦' //footer
 
 // COMMAND MENU
-global.dashmenu = '┅━━━━━═┅═❏ *DASHBOARD* ❏═┅═━━━━━┅'
+global.dashmenu = '┅━━━━━═┅═❏ *𝙳𝙰𝚂𝙱𝙾𝙰𝚁𝙳* ❏═┅═━━━━━┅'
 global.cmenut = '❏––––––『'                       //top
 global.cmenuh = '』––––––'                        //header
 global.cmenub = '┊✘ '                            //body
@@ -175,8 +176,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'MoonBot By Rull'
-global.stickauth = `© Rull\n© Jenny`
+global.stickpack = '𝓜𝓸𝓸𝓷𝓑𝓸𝓽'
+global.stickauth = `ᴏᴡɴᴇʀ ʙᴏᴛ: ʀᴜʟʟ`
 
 global.multiplier = 38 // The higher, The harder levelup
 
