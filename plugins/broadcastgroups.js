@@ -1,22 +1,20 @@
-import { randomBytes } from 'crypto'
-
 let handler = async (m, { conn, text }) => {
-  let groups = Object.entries(conn.chats).filter(([jid, chat]) => jid.endsWith('@g.us') && chat.isChats && !chat.metadata?.read_only && !chat.metadata?.announce).map(v => v[0])
-  let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
-  let teks = text ? text : cc.text
-  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
-  for (let id of groups) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? `${htki} *BROADCAST* ${htka}\n` + teks : `${htki} *BROADCAST* ${htka}\n` + teks + '\n' + readMore + '\n\n' + botdate), true).catch(_ => _)
-  m.reply('Selesai Broadcast All Group :)')
+	let wm = global.wm
+	let groups = Object.entries(await conn.groupFetchAllParticipating()).filter(([jid, chat]) => !chat?.announce).map(v => v[0]),
+		cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m,
+		teks = text ? text : cc.text
+	await m.reply(`_Mengirim pesan broadcast ke ${groups.length} group_`)
+	for (let id of groups) 
+	await conn.sendButton(id,'*—「 Broadcast 」—*\n' + teks, wm, [['⋮☰ Menu', '.menu'], ['Owner', '.owner']], m)
+	m.reply('Selesai Broadcast All Group')
 }
-handler.help = ['broadcastgroup', 'bcgc'].map(v => v + ' <teks>')
-handler.tags = ['owner']
+handler.help = ['broadcastgroup']
 handler.command = /^(broadcast|bc)(group|grup|gc)$/i
-
+handler.tags = ['owner']
 handler.owner = true
 
 export default handler
 
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
-
-const randomID = length => randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
+function readMore() {
+	return (String.fromCharCode(8206)).repeat(4001)
+}
