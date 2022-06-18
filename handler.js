@@ -323,7 +323,7 @@ export async function handler(chatUpdate) {
                     delete: true,
                     antiLink: false,
                     viewonce: false,
-                    antiToxic: true,
+                    antiToxic: false,
                     simi: false,
                     expired: 0,
                     nsfw: false,
@@ -534,7 +534,7 @@ export async function handler(chatUpdate) {
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `[💬] 𝗗𝗶𝗽𝗲𝗿𝗹𝘂𝗸𝗮𝗻 𝗟𝗲𝘃𝗿𝗹 ${plugin.level} 𝗨𝗻𝘁𝘂𝗸 𝗠𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗣𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗜𝗻𝗶\n*𝗟𝗲𝘃𝗲𝗹 𝗞𝗺𝘂 𝗞𝗮𝗸:* ${_user.level} 📊`, m)
+                    this.reply(m.chat, `[💬] 𝗗𝗶𝗽𝗲𝗿𝗹𝘂𝗸𝗮𝗻 𝗟𝗲𝘃𝗲𝗹 ${plugin.level} 𝗨𝗻𝘁𝘂𝗸 𝗠𝗲𝗻𝗴𝗴𝘂𝗻𝗮𝗸𝗮𝗻 𝗣𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗜𝗻𝗶\n*𝗟𝗲𝘃𝗲𝗹 𝗞𝗮𝗺𝘂:* ${_user.level} 📊`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
