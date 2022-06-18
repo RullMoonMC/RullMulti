@@ -234,27 +234,27 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
 	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
 	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
-	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
-	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
-	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
+	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "⌬ Menampilkan Menu Game"},
+	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "⌬ Fitur yang aman untuk keluarga"},
+	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "⌬ Tanyakan pada ketua club"},
+	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "⌬ Random Inspirasi"},
+	{title: `🦊 ${pmenus} Anime`, rowId: ".? anime", description: "⌬ Wibu Menu"},
+	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "⌬ Nsfw"},
+	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "⌬ Untuk User Premium"},
+	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "⌬ Bicara dengan orang tidak dikenal"},
+	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "⌬ Tobat Menu"},
+	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "⌬ Cari sesuatu di MoonBot"},
+	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "⌬ Download sesuatu di MoonBot"},
+	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "⌬ Buat Sticker Dengan Bot"},
+	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "⌬ Nulis Menu"},
+	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "⌬ Ubah Audio dengan Filter"},
+	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "⌬ Hanya Untuk Di Grhb"},
 	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "⌬ Simpan sesuatu di MoonBot"},
+	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "⌬ Mungkin tools ini bisa berguna?"},
+	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "⌬ Info info BOT"},
+	{title: `✨ ${pmenus} Owner`, rowId: ".? owner", description: "⌬ Owner Only!"},
+	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "⌬ Fitur tanpa kategory!"},
 	]
   },
 ]
@@ -279,10 +279,10 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
+  footer: '🦋 *Note:* Kalau Nemu Bug Atau Kesulitan Bisa Hubungi Owner',
   mentions: await conn.parseMention(tek),
-  title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `KLIK DISINI ⎙`,
+  title: `${htki} *List Menu MoonBot* ${htka}`,
+  buttonText: `࿈ Klik Disini`,
   sections
 }
   if (teks == '404') {
@@ -422,7 +422,7 @@ const listMessage = {
   "jpegThumbnail": fs.readFileSync('./thumbnail.jpg'),
     },
   "title": `${ucapan()}`,
-  "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
+  "description": '࿈ 𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
   "currencyCode": "US",
   "priceAmount1000": "100",
   "retailerId": wm,
@@ -482,7 +482,7 @@ const listMessage = {
     const message = {
             document: { url: thumbdoc },
             jpegThumbnail: await (await fetch(thumbdoc)).buffer(),
-            fileName: '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
+            fileName: '࿈ 𝗧 𝗜 𝗠 𝗘 : ' + wktuwib,
             mimetype: td,
             fileLength: fsizedoc,
             pageCount: fpagedoc,
@@ -562,22 +562,22 @@ function clockStringP(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [ye, ' *Years 🗓️*\n',  mo, ' *Month 🌙*\n', d, ' *Days ☀️*\n', h, ' *Hours 🕐*\n', m, ' *Minute ⏰*\n', s, ' *Second ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
+  return [ye, ' *Tahun 🗓️*\n',  mo, ' *Bulan 🌙*\n', d, ' *Hari ☀️*\n', h, ' *Jam 🕐*\n', m, ' *Menit ⏰*\n', s, ' *Detik ⏱️*'].map(v => v.toString().padStart(2, 0)).join('')
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Selamat DiniHari ☀️"
+  let res = "Selamat Dini Hari ☀️"
   if (time >= 4) {
-    res = "Good Morning 🌄"
+    res = "Selamat pagi 🌄"
   }
   if (time >= 10) {
-    res = "Good Afternoon ☀️"
+    res = "Selamat siang ☀️"
   }
   if (time >= 15) {
-    res = "Good Afternoon 🌇"
+    res = "Selamat Sore 🌇"
   }
   if (time >= 18) {
-    res = "Good Night 🌙"
+    res = "Selamat malam 🌙"
   }
   return res
 }
