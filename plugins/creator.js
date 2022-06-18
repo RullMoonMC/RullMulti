@@ -44,7 +44,6 @@ const sections = [
 	title: `${htjava} SUPPORT ME –––––––·•`,
 	rows: [
 	    {title: "💹 • Donasi", rowId: ".owner nomor"},
-	{title: "🌟 • Buy Premium", rowId: ".premium"},
 	]
   },
 ]
