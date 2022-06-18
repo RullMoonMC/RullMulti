@@ -50,9 +50,9 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
-  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
-  buttonText: "Click Here !",
+  footer: `┗ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* ${conn.getName(m.sender)}\n<❔> Mau Custom Nme? Ketik *${usedPrefix + command} NamaKamu.Umur*`,
+  title: "▢- - - - - ʀᴇɢɪsᴛʀᴀsɪ - - - - -",
+  buttonText: "Klik Disini !",
   sections
 }
 
@@ -73,18 +73,19 @@ const listMessage = {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
 ┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
+│▸ *sᴛᴀᴛᴜs:* 🌙 sᴜᴋsᴇs
+│▸ *ɴᴀᴍᴀ:* ${name}
+│▸ *ᴜᴍᴜʀ:* ${age} ʏᴇᴀʀs
 │▸ *sɴ:* ${sn}
+│▸ *ᴛᴇʀɪᴍᴀᴋᴀsɪʜ*
 ┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
+ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ⭐
 `
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileName':'- - - - - ᴅᴀғᴛᴀʀ ᴍᴏᴏɴ ʙᴏᴛ - - - - -',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
@@ -96,7 +97,7 @@ const listMessage = {
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/4a7e5f18efaadec18a7a0.jpg')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/964b68fa3db9483c7fe20.jpg')).buffer(),
 'sourceUrl':sgc}},
 'caption':cap,
 'footer':botdate,
