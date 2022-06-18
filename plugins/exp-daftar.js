@@ -49,22 +49,22 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ]
 
 const listMessage = {
-  text: `│›Please select your age at the bottom button...`,
+  text: `│›ᴍᴏʜᴏɴ ᴘɪʟɪʜ ᴜᴍᴜʀ ᴀɴᴅᴀ ᴅɪ ᴛᴏᴍʙᴏʟ ʙᴇʀɪᴋᴜᴛ...`,
   footer: `┗ *ɴᴀᴍᴀ ᴋᴀᴍᴜ:* ${conn.getName(m.sender)}\n<❔> Mau Custom Name? Ketik *${usedPrefix + command} NamaKamu.Umur*`,
   title: "▢- - - - - ʀᴇɢɪsᴛʀᴀsɪ - - - - -",
-  buttonText: "Klik Disini !",
+  buttonText: "ᴋʟɪᴋ ᴅɪsɪɴɪ !",
   sections
 }
 
   let user = global.db.data.users[m.sender]
-  if (user.registered === true) throw `[💬] Kamu sudah terdaftar\nMau daftar ulang? *${usedPrefix}unreg <SERIAL NUMBER>*`
+  if (user.registered === true) throw `[💬] ᴋᴀᴍᴜ ᴜᴅʜ ᴛᴇʀᴅᴀғᴛᴀʀ\nᴍᴀᴜ ᴅᴀғᴛᴀʀ ᴜʟᴀɴɢ ʙɢ? *${usedPrefix}unreg <SERIAL NUMBER>*`
   if (!Reg.test(text)) return conn.sendMessage(m.chat, listMessage, { quoted: m })
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 30) throw 'WOI TUA (。-`ω´-)'
-  if (age < 5) throw 'Halah dasar bocil'
+  if (age > 30) throw 'ᴛᴇʀʟᴀʟᴜ ᴛᴜᴀ ᴀɴᴅᴀᴀᴀ'
+  if (age < 5) throw 'ʙᴏᴄɪʟ ʙᴀɴɢ :ᴠ'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
@@ -72,20 +72,17 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* 🌙 sᴜᴋsᴇs
-│▸ *ɴᴀᴍᴀ:* ${name}
-│▸ *ᴜᴍᴜʀ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn} ✅
-│▸ *ᴛᴇʀɪᴍᴀᴋᴀsɪʜ*
-┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ⭐
+⏚ ɴᴀᴍᴀ: ${name}
+⏚ sɴ: ${sn}
+⏚ sᴛᴀᴛᴜs: ᴠᴇʀɪᴠᴇᴅ
+⏚ ᴜᴍᴜʀ: ${age} ᴛᴀʜᴜɴ
+
 `
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ᴅᴀғᴛᴀʀ ᴍᴏᴏɴ ʙᴏᴛ - - - - -',
+'fileName':'𔘓 MoonBot',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
