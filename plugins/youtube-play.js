@@ -6,19 +6,19 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let { title, description, thumbnail, videoId, durationH, viewH, publishedTime } = vid
   const url = 'https://www.youtube.com/watch?v=' + videoId
   await conn.sendHydrated(m.chat, `
-*${htki} PLAY ${htka}*
+*${htki} Playing ${htka}*
 
 ${htjava} *Title:* ${title}
-📤 *Published:* ${publishedTime}
-⏰ *Duration:* ${durationH}
-👁️ *Views:* ${viewH}
+✨ *Waktu Publikasi:* ${publishedTime}
+⏰ *Durasi:* ${durationH}
+👁️ *Penonton:* ${viewH}
 
-🔗 *Url:* ${url}
-📔 *Description:* ${description}
+🔗 *Link:* ${url}
+📔 *Deskripsi:* ${description}
   `.trim(), wm, thumbnail, url, '📣 GO TO YOUTUBE', null, null, [
-    ['🎶 Audio', `${usedPrefix}yta ${url} yes`],
-    ['🎥 Video', `${usedPrefix}ytv ${url} yes`],
-    ['🔎 Youtube Search', `${usedPrefix}yts ${url}`]
+    ['🎧 Audio', `${usedPrefix}yta ${url} yes`],
+    ['📼 Video', `${usedPrefix}ytv ${url} yes`],
+    ['🔎 Cari Di Youtube', `${usedPrefix}yts ${url}`]
   ], m)
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
