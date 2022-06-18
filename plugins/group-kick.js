@@ -4,7 +4,7 @@ let handler = async (m, { conn, participants }) => {
     let kickedUser = []
     for (let user of users)
         if (user.endsWith('@s.whatsapp.net') && !(participants.find(v => areJidsSameUser(v.id, user)) || { admin: true }).admin) {
-            const res = await conn.groupParticipantsUpdate(m.chat, [user], "remove")
+            const res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
             kickedUser.concat(res)
             await delay(1 * 1000)
         }
@@ -12,10 +12,10 @@ let handler = async (m, { conn, participants }) => {
 
 }
 handler.help = ['kick', '-'].map(v => 'o' + v + ' @user')
-handler.tags = ['owner']
-handler.command = /^(okick|o-)$/i
+handler.tags = ['group']
+handler.command = /^(kick)$/i
 
-handler.owner = true
+handler.admin = true
 handler.group = true
 handler.botAdmin = true
 
