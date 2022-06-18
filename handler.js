@@ -590,7 +590,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' 𝗟𝗶𝗺𝗶𝘁 𝗧𝗲𝗿𝗽𝗮𝗶𝗸𝗮𝗶 ✔️')
+                        m.reply(+m.limit + ' Limit Used ✨')
                 }
                 break
             }
