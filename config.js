@@ -175,8 +175,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `MoonBot`
+global.stickpack = 'MoonBot By Rull'
+global.stickauth = `© Rull\n© Jenny`
 
 global.multiplier = 38 // The higher, The harder levelup
 
