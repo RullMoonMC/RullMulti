@@ -67,9 +67,9 @@ global.nameown = 'Rull - Senpai'
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285746030186'],
-  ['6281539336141'],
   ['0'],
+  ['0'],
+  ['6281539336141', 'Jenny', true],
   ['6285746030186', 'Rull', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
