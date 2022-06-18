@@ -15,14 +15,14 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 • Owner berhak blockir tanpa alasan
 • Berbicaralah yang sopan & tidak spam
 • Owner Hanya merespon yang berkaitan dengan BOT
-• No Telpon Kalo Gak Penting`
+• No Telpon Kalo Gak Penting
 
 👾 *Co Owner*
-• https://wa.me/6281539336141
+>> https://wa.me/6281539336141
 • Dilarang Spam
 • Owner Berhak Blokir Tanpa Alasan
 • Berbicaralah Dengan Sopan
-• Gaboleh Telpon
+• Gaboleh Telpon`
 
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
