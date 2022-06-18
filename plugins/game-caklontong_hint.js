@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
     let json = conn.caklontong[id][1]
     let ans = json.jawaban
     let clue = ans.replace(/[AIUEO]/gi, '_')
-    m.reply('```' + clue + '```\n*Jawab Di Soal Ya Bukan Di Hint*')
+    m.reply('```' + clue + '```')
 }
 handler.command = /^calo$/i
 
