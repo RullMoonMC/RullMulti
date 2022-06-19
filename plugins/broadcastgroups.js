@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
 		teks = text ? text : cc.text
 	await m.reply(`_Mengirim pesan broadcast ke ${groups.length} group_`)
 	for (let id of groups) 
-	await conn.sendButton(id,'*—「 Broadcast 」—*\n' + teks, wm, [['⋮☰ Menu', '.menu'], ['Owner', '.owner']], m)
+	await conn.sendButton(id,'*—「 Broadcast MoonBot 」—*\n' + teks, wm, [['⋮☰ Menu Bot', '.menu'], ['Owner', '.owner']], m)
 	m.reply('Selesai Broadcast All Group')
 }
 handler.help = ['broadcastgroup']
