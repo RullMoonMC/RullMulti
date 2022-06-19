@@ -111,24 +111,24 @@ let handler = async (m, { conn, isRowner}) => {
     })
         
   let old = performance.now()
-  await m.reply(`*ᴛ ᴇ s ᴛ ɪ ɴ ɢ . . .*`)
+  await m.reply(`*𝑻𝒆𝒔𝒕𝒊𝒏𝒈 𝑺𝒑𝒆𝒆𝒅 . . .*`)
   let neww = performance.now()
   let speed = neww - old
   await conn.reply(m.chat,`- *ᴘ ɪ ɴ ɢ* -
 ${Math.round(neww - old)}ms
 ${speed}ms
 
-- *ʀ ᴜ ɴ ᴛ ɪ ᴍ ᴇ* -
+- *𝑹𝒖𝒏𝒕𝒊𝒎𝒆 𝑴𝒐𝒐𝒏𝑩𝒐𝒕* -
 ${muptime}
 ${readMore}
-- *ᴄ ʜ ᴀ ᴛ s* -
+- *𝑪𝒉𝒂𝒕* -
 • *${groupsIn.length}* Group Chats
 • *${groupsIn.length}* Groups Joined
 • *${groupsIn.length - groupsIn.length}* Groups Left
 • *${chats.length - groupsIn.length}* Personal Chats
 • *${chats.length}* Total Chats
 
-- *s ᴇ ʀ ᴠ ᴇ ʀ* -
+- *𝑺 𝑬 𝑹 𝑽 𝑬 𝑹* -
 *🛑 Rᴀᴍ:* ${ramUsed} / ${_ramTotal}(${/[0-9.+/]/g.test(ramUsed) &&  /[0-9.+/]/g.test(ramTotal) ? Math.round(100 * (ramUsed / ramTotal)) + '%' : NotDetect})
 *🔵 FʀᴇᴇRᴀᴍ:* ${format(freemem())}
 
@@ -163,5 +163,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, ' *Days ☀️*\n ', h, ' *Hours 🕐*\n ', m, ' *Minute ⏰*\n ', s, ' *Second ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
+  return [d, ' *𝑯𝒂𝒓𝒊 ☀️*\n ', h, ' *𝑱𝒂𝒎 🕐*\n ', m, ' *𝑴𝒆𝒏𝒊𝒕 ⏰*\n ', s, ' *𝑫𝒆𝒕𝒊𝒌 ⏱️* '].map(v => v.toString().padStart(2, 0)).join('')
 }
