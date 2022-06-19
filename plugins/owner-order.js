@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             mentionedJid: [m.sender]
         }
     })
-    m.reply('☑️ Pesan Telah terkirim ke Owner!\n_*Menunggu confirmasi Dari Owner...*_')
+    m.reply('☑️ Pesan Telah terkirim ke Owner!\nJangan Spam\n\n📌Kalau Gak Order Gausah Di Teken\n_*Menunggu confirmasi Dari Owner...*_')
 }
 handler.command = /^(order)$/i
 export default handler
