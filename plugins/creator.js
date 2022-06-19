@@ -58,7 +58,7 @@ const listMessage = {
   text: teks,
   footer: null,
   title: `${htki} *⭐Owner* ${htka}`,
-  buttonText: "Klik Disinj !",
+  buttonText: "Klik Disini !",
   sections
 }
 
