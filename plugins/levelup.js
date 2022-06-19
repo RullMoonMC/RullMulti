@@ -6,9 +6,9 @@ let handler = async (m, { conn }) => {
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
         throw `
-Level ${user.level} 📊
+𝐿𝑒𝑣𝑒𝑙 ${user.level} 📊
 *${user.exp - min} / ${xp}*
-Kurang *${max - user.exp}* lagi! ✨
+𝐾𝑢𝑟𝑎𝑛𝑔 *${max - user.exp}* 𝐿𝑎𝑔𝑖! ✨
 `.trim()
     }
     let before = user.level * 1
@@ -16,7 +16,7 @@ Kurang *${max - user.exp}* lagi! ✨
     if (before !== user.level) {
         let teks = `.             ${user.role}`
         let str = `
-*🎉 C O N G R A T S 🎉*
+*𝐿𝑒𝑣𝑒𝑙 𝑀𝑒𝑛𝑖𝑛𝑔𝑘𝑎𝑡*
 *${before}* ➔ *${user.level}* [ *${user.role}* ]`.trim()
         try {
             const img = await levelup(teks, user.level)
