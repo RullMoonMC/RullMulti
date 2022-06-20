@@ -8,6 +8,8 @@ let handler  = async (m, { conn }) => {
 handler.help = ['berhenti','stop']
 handler.tags = ['tanpakategori']
 handler.command = /^(berhenti|stop)$/i
+
 handler.owner = true
-module.exports = handler
+
+module exports handler
 
