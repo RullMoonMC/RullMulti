@@ -9,16 +9,16 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 *${htki} Playing ${htka}*
 
 ${htjava} *Title:* ${title}
-✨ *Waktu Publikasi:* ${publishedTime}
-⏰ *Durasi:* ${durationH}
-👁️ *Penonton:* ${viewH}
+𓊔˖ ۫ ݂ 🌙 *Waktu Publikasi:* ${publishedTime}
+𓊔˖ ۫ ݂ ✨ *Durasi:* ${durationH}
+𓊔˖ ۫ ݂ 🎀 *Penonton:* ${viewH}
 
 🔗 *Link:* ${url}
 📔 *Deskripsi:* ${description}
-  `.trim(), wm, thumbnail, url, '📣 GO TO YOUTUBE', null, null, [
-    ['🎧 Audio', `${usedPrefix}yta ${url} yes`],
-    ['📼 Video', `${usedPrefix}ytv ${url} yes`],
-    ['🔎 Cari Di Youtube', `${usedPrefix}yts ${url}`]
+  `.trim(), wm, thumbnail, url, '❒ Ke Youtube', null, null, [
+    ['⌗° |Audio', `${usedPrefix}yta ${url} yes`],
+    ['⌗° |Video', `${usedPrefix}ytv ${url} yes`],
+    ['⌗° |Cari Di Youtube', `${usedPrefix}yts ${url}`]
   ], m)
 }
 handler.help = ['play', 'play2'].map(v => v + ' <pencarian>')
