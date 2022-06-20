@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, command }) => {
       }) * 1000
     }
     let muptime = clockString(_muptime)
- conn.reply(m.chat, `${htki} ** 👾 ׁ ⌯ R U N T I M E* ${htka}\n${muptime}\n`, m, {
+ conn.reply(m.chat, `${htki} * 👾 ׁ ⌯ R U N T I M E* ${htka}\n${muptime}\n`, m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
