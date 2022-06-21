@@ -5,28 +5,28 @@ async function handler(m, { command }) {
         case 'next':
         case 'leave': {
             let room = Object.values(this.anonymous).find(room => room.check(m.sender))
-            if (!room) return this.sendButton(m.chat, '_ᴋᴀᴍᴜ sᴇᴅᴀɴɢ ᴛɪᴅᴀᴋ ᴅɪ ᴀɴʏᴍᴏᴜs ᴄʜᴀᴛ_', author, null, [['Cari Partner', `.start`]], m)
+            if (!room) return this.sendButton(m.chat, '_Kamu tidak sedang berada di anonymous chat_', author, null, [['Cari Partner', `.start`]], m)
             m.reply('Ok')
             let other = room.other(m.sender)
-            if (other) await this.sendButton(other, '_ᴘᴀᴛɴᴇʀ ᴍᴇɴɪɴɢɢᴀʟᴋᴀɴ ᴄʜᴀᴛ_', author, null, [['Cari Partner', `.start`]], m)
+            if (other) await this.sendButton(other, '_Partner meninggalkan chat_', author, null, [['Cari Partner', `.start`]], m)
             delete this.anonymous[room.id]
             if (command === 'leave') break
         }
         case 'start': {
-            if (Object.values(this.anonymous).find(room => room.check(m.sender))) return this.sendButton(m.chat, '_ᴋᴀᴍᴜ ᴍᴀsɪʜ ʙᴇʀᴀᴅᴀ ᴅɪ ᴀɴʏᴍᴏᴜs ᴄʜᴀᴛ, ᴍᴇɴᴜɴɢɢᴜ ᴘᴀᴛɴᴇʀ_', author, null, [['ᴋᴇʟᴜᴀʀ', `.leave`]], m)
+            if (Object.values(this.anonymous).find(room => room.check(m.sender))) return this.sendButton(m.chat, '_Kamu masih berada di dalam anonymous chat, menunggu partner_', author, null, [['Keluar', `.leave`]], m)
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-                await this.sendButton(room.a, '_ᴘᴀᴛɴᴇʀ ᴅɪᴛᴇᴍᴜᴋᴀɴ!_', author, null, [['Next', `.next`]], m)
+                await this.sendButton(room.a, '_Partner ditemukan!_', author, null, [['Next', `.next`]], m)
                 room.b = m.sender
-                room.state = 'ᴄʜᴀᴛᴛɪɴɢ'
-                await this.sendButton(room.a, '_ᴘᴀᴛɴᴇʀ ᴅɪᴛᴇᴍᴜᴋᴀɴ!_', author, null, [['Next', `.next`]], m)
+                room.state = 'CHATTING'
+                await this.sendButton(room.a, '_Partner ditemukan!_', author, null, [['Next', `.next`]], m)
             } else {
                 let id = + new Date
                 this.anonymous[id] = {
                     id,
                     a: m.sender,
                     b: '',
-                    state: 'ᴡᴀɪᴛɪɴɢ',
+                    state: 'WAITING',
                     check: function (who = '') {
                         return [this.a, this.b].includes(who)
                     },
