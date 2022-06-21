@@ -1,7 +1,7 @@
 let handler = async (m, { conn }) => {
   let user = global.db.data.users[m.sender]
   const caption = `
-▧「 *B A N K  U S E R* 」
+▧「 *B A N K  M O O N* 」
 │ 📛 *Name:* ${user.registered ? user.name : conn.getName(m.sender)}
 │ 💳 *Atm:* ${user.atm > 0 ? 'Level ' + user.atm : '✖️'}
 │ 🏛️ *Bank:* ${user.bank} 💲 / ${user.fullatm} 💲
@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
 │ 📑 *Registered:* ${user.registered ? 'Yes':'No'}
 └──···
 `.trim()
-  conn.sendButton(m.chat, caption, global.wm, 'https://telegra.ph/file/0451b07945f7f9633b59b.jpg', [`Inventory`, '.inv'],m)
+  conn.sendButton(m.chat, caption, global.wm, 'https://telegra.ph/file/00fd49ba7784c3c5c40fa.jpg', [`Inventory`, '.inv'],m)
 }
 handler.help = ['bank']
 handler.tags = ['rpg']
